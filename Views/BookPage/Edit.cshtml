@@ -1,0 +1,27 @@
+﻿@model BookAndBite2.Models.BookDto;
+
+@{
+    ViewData["Title"] = "Edit Book";
+}
+
+<h1>Edit Book</h1>
+
+<form asp-action="Update" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="BookId" />
+
+    <div class="form-group">
+        <label asp-for="BookName"></label>
+        <input asp-for="BookName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="BookAuthor"></label>
+        <input asp-for="BookAuthor" class="form-control" required />
+    </div>    
+    <div class="form-group">
+        <label for="BookImage">Book Image</label>
+        <input type="file" name="BookImage" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+
+<a asp-controller="BookPage" asp-action="Details" asp-route-id="@Model.BookId" class="btn btn-secondary">Cancel</a>

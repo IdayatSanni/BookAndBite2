@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookAndBite2", "BookAndBite2.csproj", "{A2796165-EBD2-40BC-A704-E3143A7A3674}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2796165-EBD2-40BC-A704-E3143A7A3674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2796165-EBD2-40BC-A704-E3143A7A3674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2796165-EBD2-40BC-A704-E3143A7A3674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2796165-EBD2-40BC-A704-E3143A7A3674}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77CF0278-5C51-44C1-AE09-0A86625BE6FF}
+	EndGlobalSection
+EndGlobal

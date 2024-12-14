@@ -1,0 +1,35 @@
+﻿@model BookAndBite2.Models.BookDto;
+
+<a href="/BookPage/Delete/@Model.BookId">Delete</a>
+<a href="/BookPage/Edit/@Model.BookId">Edit</a>
+<a href="/BookPage/List" class="btn btn-secondary">Back to List</a>
+
+<div class="row">
+    <div class="col-md-6">
+        <div>
+            <label>Title</label>
+            <div>@Model.BookName</div>
+        </div>
+        <div>
+            @if (!string.IsNullOrEmpty(Model.BookPicture))
+            {
+                <img style="width:150px; height:auto;" src="@Url.Content("~/images/books/" + Model.BookPicture)" alt="@Model.BookName" />
+            }
+            else
+            {
+                <img src="~/images/books/default.png" alt="No Image" style="width:150px; height:auto;" />
+            }
+        </div>
+        <div>
+            <label>Authors</label>
+            <ul>
+                @foreach (var author in Model.BookAuthor)
+                {
+                    <li>@author</li>
+                }
+            </ul>
+        </div>
+
+    </div>
+</div>
+

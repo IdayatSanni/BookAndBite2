@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BookAndBite2.props" />
+</Project>

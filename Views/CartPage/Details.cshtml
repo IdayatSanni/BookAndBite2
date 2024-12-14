@@ -1,0 +1,36 @@
+﻿@model BookAndBite2.Models.CartDto;
+
+<h2>Cart Details</h2>
+
+<div>
+    <h3>Cart Name: @Model.CartName</h3>
+    <p>Date Created: @Model.DateCreated.ToShortDateString()</p>    
+</div>
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Book Name  </th>
+                <th>Author  </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.Books)
+            {
+                <tr>
+                    <td>@book.BookName</td>
+                    <td>@book.BookAuthor</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.CartId" class="btn btn-primary">Edit</a>
+    <a asp-action="DeleteConfirmation" asp-route-id="@Model.CartId" class="btn btn-danger">Delete</a>
+</div>
